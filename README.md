@@ -1,3 +1,3 @@
-## 資工筆記
+## nttu csie note
 ---
-本篇內容將為個人上課筆記，預計內含 Python、C 語言、Html 等相關內容。
+本篇內容將為個紀錄，預計內含 Python、C、html 等相關內容。
