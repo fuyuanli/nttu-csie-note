@@ -1,6 +1,6 @@
 a = -3
 for i in range(32): # 0~31 做32次的迴圈
-    print(a >> (31-i) & 1,end="")
+    print( a >> (31-i) & 1,end="" )
     # end = "" 意思是不換行
     # >> 右位移會先轉成 binary 再右移
     #
