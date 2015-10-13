@@ -4,3 +4,5 @@
 輸入一個數字將會轉換為 IEEE 754 的格式，詳請請 [Google](https://www.google.com/?q=IEEE%20754)
 
 如果同學要交作業的話請參考就好，不要全抄惹，感謝您的配合～
+
+[程式碼](https://github.com/fuyuanli/nttu-csie-note/tree/master/Python/20151008-Dec2IEEE754)
