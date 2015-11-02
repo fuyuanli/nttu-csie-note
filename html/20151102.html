@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>報名表</title>
+
+	<script>
+		function doit(){
+		
+			if(document.getElementById("cname").value==""){
+				alert("姓名不可空白!!");
+			}
+			else{
+				//送出
+			}
+			
+		}
+	
+	
+
+	</script>
+
+</head>
+<body>
+
+<form>
+	<fieldset style="line-height:25px">
+		<legend>報名表</legend>
+		姓名 <input type="text" name="cname" id="cname">
+		<br>
+		
+		性別 
+		<input type="radio" name="sex" value=man checked> 男生
+		<input type="radio" name="sex" value=woman> 女生
+		<br>
+		
+		興趣
+		<input type="checkbox" name="interest1 value="jogging"> 慢跑
+		<input type="checkbox" name="interest2 value="swimming"> 游泳
+		<br>
+		
+		出生地
+		<select name="place">
+			<option value="taipei">台北</option>
+			<option value="chiyai">嘉義</option>
+		</select>
+		<br>
+		
+		自傳
+		<br>
+		<textarea name="message" rows="5" cols="20">請至少寫100字</textarea>
+		<hr>
+		
+		<div style="text-align:right">
+		<button onclick="doit(); return false;">我要報名</button>
+		</div>
+	</fieldset>
+</form>
+
+</body>
+</html>
