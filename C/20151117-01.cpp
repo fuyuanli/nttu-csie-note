@@ -8,7 +8,7 @@ int main (){
 	for(i=1;i<=n;i++){
 		sum+=i;
 	}
-	printf("For è¿´åœˆ : %d\n",sum);
+	printf("For °j°é : %d\n",sum);
 	
 	i=1;
 	sum=0;
@@ -18,7 +18,7 @@ int main (){
 		sum+=i;
 		++i;
 	}
-	printf("While è¿´åœˆ : %d\n",sum);
+	printf("While °j°é : %d\n",sum);
 	
 	return 0;
 }
