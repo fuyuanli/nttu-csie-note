@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main (){
-  int n=100,i=0,sum=0;
+	int n=100,i=0,sum=0;
 	printf("n = %d , 1+2+3+...+%d+%d = ?\n",n,n-1,n);
 	
 	//FOR LOOP	
