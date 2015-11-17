@@ -10,10 +10,5 @@ int main (){
 		++i;
 	} 
 	
-	//while(i<n)
-	//	if(n%i==0)
-	//		sum+= i++;
-	
-	
 	printf("%s",n==sum?"yes":"no");
 }
