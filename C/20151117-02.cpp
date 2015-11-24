@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main (){
-	//§PÂ_½è¼Æ 
+	//Find Prime
 	int prime=1,i=2,n=101;
 	
 	while (i<n){

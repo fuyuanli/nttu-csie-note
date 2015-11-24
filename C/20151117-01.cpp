@@ -8,7 +8,7 @@ int main (){
 	for(i=1;i<=n;i++){
 		sum+=i;
 	}
-	printf("For °j°é : %d\n",sum);
+	printf("For Loop : %d\n",sum);
 	
 	i=1;
 	sum=0;
@@ -18,7 +18,7 @@ int main (){
 		sum+=i;
 		++i;
 	}
-	printf("While °j°é : %d\n",sum);
+	printf("While Loop : %d\n",sum);
 	
 	return 0;
 }
