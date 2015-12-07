@@ -1,7 +1,9 @@
 #include<stdio.h>
 
 int main(){
-	int n=7,count=0;
+
+	//While loop:找出二進位的N裡面有幾個數字1 
+	int n=157,count=0;
 	while(n>0){
 		if(n%2==1)
 			count++;
