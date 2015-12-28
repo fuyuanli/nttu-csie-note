@@ -19,3 +19,10 @@ $(document).ready(function(){
 	});
 });
 
+$(document).ready(function(){
+	$("button").click(function(){
+		$("#demo2").val($("demo1").val());
+		//把demo的值存到 demo2
+	});
+});
+
