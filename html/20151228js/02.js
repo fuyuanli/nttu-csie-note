@@ -57,7 +57,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("button").click(function(){
 		$("div:first p").last().css("color","red"); 
-		//把第一個div 內的p文字變為紅色
+		//把第一個div 內的「最後一個p」文字變為紅色
 	});
 });
 
