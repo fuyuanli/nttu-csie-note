@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	int n=123456789;
+	int n=123459;
 	int count=1;
 	
 	while(n>9){
