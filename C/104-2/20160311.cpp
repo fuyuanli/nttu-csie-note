@@ -3,9 +3,16 @@ void clear(int *p){
 	*p=0;	
 }
 
-void clearArray(int *a,int n){
+void clear_array1(int *a,int n){
 	for(int i=0;i<n;++i)
 		*(a+i)=0;
+}
+
+void clear_array2(int *p,int n){
+	int *q=p+n;
+	for(;p!=q;++p)
+		*p=0;
+	
 }
 
 int main(){
@@ -14,8 +21,10 @@ int main(){
 	
 	for(int i=0;i<n;++i)
 		printf("%d,",a[i]);
+		
 	printf("\n");	
-	clearArray(a,n);
+	
+	clear_array2(a,n);
 	
 	for(int i=0;i<n;++i)
 		printf("%d,",a[i]);
