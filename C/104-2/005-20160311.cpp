@@ -6,7 +6,8 @@ int *max_loc(int* a,int n){
 	
 	for(int i=1;i<n;++i)
 		if(*(p+i) > *mp)
-			mp=mp+1;
+			mp=p+i;
+			//mp=mp+1;
 	return mp;
 	
 }
