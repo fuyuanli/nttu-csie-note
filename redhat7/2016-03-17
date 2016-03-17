@@ -86,3 +86,16 @@ find: ‘/etc/pki/CA/private’: Permission denied
 ..
 find: ‘/etc/cups/ssl’: Permission denied
 [student@desktop6 ~]$
+======================================================
+[student@desktop6 ~]$ cat > XD
+Hello,     
+This is Redhat Enterprise Linux 7.
+^C
+[student@desktop6 ~]$ cat XD
+Hello,
+This is Redhat Enterprise Linux 7.
+[student@desktop6 ~]$ cat > fileXD < XD
+[student@desktop6 ~]$ cat fileXD 
+Hello,
+This is Redhat Enterprise Linux 7.
+[student@desktop6 ~]$
