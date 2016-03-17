@@ -39,4 +39,50 @@ a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z
 [student@desktop6 GG]$ ls
 a  b  c  d
 [student@desktop6 GG]$ 
+==========================IO==========================
+[student@desktop6 ~]$ date > file
+[student@desktop6 ~]$ cat file
+Thu Mar 17 09:50:58 CST 2016
+[student@desktop6 ~]$ date > file
+[student@desktop6 ~]$ cat file
+Thu Mar 17 09:51:11 CST 2016
+[student@desktop6 ~]$ date >> file
+[student@desktop6 ~]$ cat file
+Thu Mar 17 09:51:11 CST 2016
+Thu Mar 17 09:51:18 CST 2016
+[student@desktop6 ~]$ date >> file
+[student@desktop6 ~]$ [student@desktop6 ~]$ cat file
+/etc/passwd
+/etc/pam.d/passwd
+[student@desktop6 ~]$ 
+date >> file
+[student@desktop6 ~]$ date >> file
+[student@desktop6 ~]$ date >> file
+[student@desktop6 ~]$ cat file
+Thu Mar 17 09:51:11 CST 2016
+Thu Mar 17 09:51:18 CST 2016
+Thu Mar 17 09:51:23 CST 2016
+Thu Mar 17 09:51:23 CST 2016
+Thu Mar 17 09:51:24 CST 2016
+Thu Mar 17 09:51:24 CST 2016
+[student@desktop6 ~]$ 
 
+======================================================
+[student@desktop6 ~]$ find /etc/ -name passwd > file 
+find: ‘/etc/pki/CA/private’: Permission denied
+....
+find: ‘/etc/cups/ssl’: Permission denied
+
+[student@desktop6 ~]$ find /etc/ -name passwd 2> error
+/etc/passwd
+/etc/pam.d/passwd
+
+[student@desktop6 ~]$ cat file
+/etc/passwd
+/etc/pam.d/passwd
+
+[student@desktop6 ~]$ cat error
+find: ‘/etc/pki/CA/private’: Permission denied
+..
+find: ‘/etc/cups/ssl’: Permission denied
+[student@desktop6 ~]$
