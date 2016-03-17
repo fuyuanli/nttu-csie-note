@@ -1,0 +1,42 @@
+[student@desktop6 ~]$ mkdir GG
+[student@desktop6 ~]$ cd GG/
+======================================================
+[student@desktop6 GG]$ touch file{1..7}1
+[student@desktop6 GG]$ ls
+file11  file21  file31  file41  file51  file61  file71
+======================================================
+[student@desktop6 GG]$ touch file{1..7}2
+[student@desktop6 GG]$ ls
+file11  file21  file31  file41  file51  file61  file71
+file12  file22  file32  file42  file52  file62  file72
+======================================================
+[student@desktop6 GG]$ rm file?[!1]
+[student@desktop6 GG]$ ls
+file11  file21  file31  file41  file51  file61  file71
+======================================================
+[student@desktop6 GG]$ rm file[^1]?
+[student@desktop6 GG]$ ls
+file11
+[student@desktop6 GG]$ 
+======================================================
+[student@desktop6 GG]$ touch file-`date +%F`
+[student@desktop6 GG]$ ls
+file-2016-03-17
+[student@desktop6 GG]$ 
+======================================================
+[student@desktop6 GG]$ ls
+a   b2  d1  f                g1  i   j2  l1  n   o2  q1  s   t2  v1  x   y2
+a1  c   d2  f1               g2  i1  k   l2  n1  p   q2  s1  u   v2  x1  z
+a2  c1  e   f2               h   i2  k1  m   n2  p1  r   s2  u1  w   x2  z1
+b   c2  e1  file-2016-03-17  h1  j   k2  m1  o   p2  r1  t   u2  w1  y   z2
+b1  d   e2  g                h2  j1  l   m2  o1  q   r2  t1  v   w2  y1
+[student@desktop6 GG]$ rm *[[:digit:]]
+[student@desktop6 GG]$ ls
+a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z
+[student@desktop6 GG]$ 
+======================================================
+[student@desktop6 GG]$ touch {a..d}
+[student@desktop6 GG]$ ls
+a  b  c  d
+[student@desktop6 GG]$ 
+
