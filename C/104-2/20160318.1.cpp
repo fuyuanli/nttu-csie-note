@@ -1,5 +1,5 @@
 #include <stdio.h>
-void sub(int *p1,int *p2){
+void sub(int *p1,int *p2){ // Call by address
 	*p2 = *p1 = -1;
 }
 
