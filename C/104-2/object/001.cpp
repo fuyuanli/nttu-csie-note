@@ -23,7 +23,12 @@ class Node {
     public:    
         int data;
         Node *link;
+        void output();
 };
+
+void Node::output(){    // :: <-- scope operator , Node 內的函式
+    printf("%d\n",data);  // data 
+}
 
 int main (){
     Node node1, node2;
@@ -32,5 +37,8 @@ int main (){
     node1.link = &node2;
 
     node2.data = 5;
-    node2.link = null;
+    node2.link = 0;
+    
+    node1.output(); // 印出 node1 內的 data
+    node2.output(); // 印出 node2 內的 data
 }
