@@ -5,6 +5,7 @@ typedef unsigned int UINT;
 class Unary{
     private:
         UINT finger;
+        // 等於 unsinged int finger;
     public:
         Unary();
         Unary(UINT);
@@ -20,16 +21,24 @@ class Unary{
 };
 
 Unary::Unary():finger(0){}
+// 等價 
+// Unary::Unary(){
+//      fibger = 0 ; 
+// }
 
 Unary::Unary(UINT value):finger(value<10?value:10){}
 
 UINT Unary::get(){
     return finger;
 }
+// Unary abc;
+// abc.get();
 
 void Unary::reset(){
     finger=0;
 }
+// Unary abc;
+// abc.reset(); // 將 finger 設為0
 
 Unary& Unary::operator++(){
     if(++finger>10)
@@ -45,10 +54,19 @@ Unary Unary::operator+(Unary acc){
     return t;
 }
 
+// Unary abc;
+// Unary xyz;
+// abc+ xyz;
+//
+
 Unary Unary::operator+(UINT value){
     Unary t(value);
     return *this+t;
 }
+
+// Unary abc;
+// abc+3;
+
 
 Unary Unary::operator+(){
     return *this;
@@ -71,7 +89,7 @@ int main(){
     ~mary;
     mary=peter+*(new Unary(3));
     ~mary;
-    ~(+++peter+3);
+    ~(+ ++peter +3);
     Unary *joe=new Unary;
     ~(*joe+ + ++*(new Unary(0))+1);
     return 0;
